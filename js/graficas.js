@@ -18,11 +18,19 @@ function renderChart() {
    datasets: [
        {
            label: "Valor del Euro",
-           data: []
+           data: Object.values(moneyData.rates)
        }
    ]
  }
 });
+
+}
+function filtroRates(){
+    Object.keys(moneyData.rates).forEach(rate => {
+        if (moneyData.rates[rate] > 23){
+            delete moneyData.rates[rate] 
+        } 
+    })
 }
 async function getMoney () {
     showLoader();
@@ -34,6 +42,7 @@ async function getMoney () {
 
     
     console.log(moneyData);
+    filtroRates();
     renderChart();
        
     
