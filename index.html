@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    
     <header>
         <h1>Dashboard</h1>
     </header>
     <main>
+        <div class="loader-container">
+            <div class="spiner"></div>
+        </div>
         <article>
-            aqui va la grafica
             <canvas id="myChart"></canvas>
+            aqui va la grafica
         </article>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./js/grafica.js"></script>
+    <script src="./js/graficas.js"></script>
 </body>
 </html>
