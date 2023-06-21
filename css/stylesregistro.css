@@ -1,0 +1,49 @@
+body{
+    color: #0a2548;
+    text-align: center;
+    margin: 200px; 
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-geometrico-abstracto-estructura-metalica_52683-59421.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    border: 500px;
+    flex-direction: column;
+    display: block;
+    justify-content: space-around;
+}
+.caja1{
+    text-align: center;
+    flex-direction: column;
+    width: 180px;
+    height: 40px;
+    column-gap: 20px;
+    margin: 10px; 
+   border-color: #0769e9;
+background-color: white;
+}
+.caja2{
+    text-align: center;
+    flex-direction: column;
+    border-color: #0769e9;
+    background-color: white;
+    width: 180px;
+    height: 40px;
+    column-gap: 20px;
+    margin: 10px; 
+  
+}
+
+.caja3{
+    text-align: center;
+    flex-direction: column;
+    border-color: #0769e9;
+    background-color: white;
+    width: 180px;
+    height: 40px;
+    column-gap: 20px;
+    margin: 10px; 
+}
+.boton{
+    background-color: #0769e9;
+    color: white;
+}

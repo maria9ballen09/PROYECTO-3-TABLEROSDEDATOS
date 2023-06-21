@@ -3,11 +3,11 @@ const canvasChart = document.getElementById("myChart").getContext("2d");
 let moneyData = {};
 
 function showLoader(){
-    loaderContainer.style.display = "flex"
+    loaderContainer.style.display ="center"
 }
 
 function hideLoader (){
-    loaderContainer.style.dysplay ="none"
+    loaderContainer.style.dysplay ="flex"
 }
 
 function renderChart() {
@@ -18,7 +18,11 @@ function renderChart() {
    datasets: [
        {
            label: "Valor del Euro",
-           data: Object.values(moneyData.rates)
+           data: Object.values(moneyData.rates),
+           borderWidth: 3,
+           backgroundColor: ["green"],
+           borderColor:["green"],
+           
        }
    ]
  }
@@ -49,3 +53,4 @@ async function getMoney () {
 }
 
 getMoney();
+

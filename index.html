@@ -1,28 +1,82 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>PROYECTO3</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./js/registros.js">
+    
 </head>
 <body>
-    
-    <header>
-        <h1>Dashboard</h1>
+    <header class="header">
+        <nav class="nav">
+            <a href="3" class="logo nav-link"> PROYECTO EURO+</a>
+            <button class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="menu"> 
+               
+                <li class="itemMenu"> <a href="index.html" class="nav-menu-link nav-link"> Inicio </a></li>
+                <li class="itemMenu"> <a href="./pages/nav-link.html"  class="nav-menu-link nav-link">Registrarse
+            </ul>
+        </nav>
     </header>
-    <main>
+    <br>
+    <main>    
+            <br>
+            <hr>
+            <h1 class="caja1"> <em>
+                 En esta grafica podras rastrear las tasas de referencia de divisas publicadas por Banco Central Europeo.Estos datos se actualizan alrededor de las 16:00 CET todo los dias habiles</em></h1>    
+            <br>
+            <canvas id="myChart" id="goodCanvas1" width="400" height="150"  role="img"></canvas>   
         <div class="loader-container">
             <div class="spiner"></div>
         </div>
-        <article>
-            <canvas id="myChart"></canvas>
-            aqui va la grafica
-        </article>
-    </main>
+<br>
+
+<br>
+<h2 class="caja2"> <em>Monedas y paises donde es usada </h3>
+            <br>
+            
+            <ol class="caja3">  
+            <li>AUD - Dólar australiano(Australia)</li> 
+              <li>BGN - búlgaro (Bulgaria)</li> 
+              <li>BRL - Real brasileño (Brasil)</li>
+              <li>CAD - Dólar canadiense (Canadá)</li>
+              <li>CHF - Franco suizo (Suiza)</li>
+              <li>CNY - Yuan chino (China)</li>
+              <li>DKK - Corona danesa (Dinamarca)</li>
+              <li>GBP - Libra británica (Reino Unido)</li>
+              <li>HKD - Dólar de Hong Kong (Hong Kong)</li>
+              <li>ILS - Nuevo shéquel (Israel, Palestina)</li>
+              <li>MXN - Peso mexicano (México)</li>
+              <li>MYR - Ringgit malayo (Malasia)</li>
+              <li>NOK - Corona noruega (Noruega)</li>
+              <li>NZD - Dólar neozelandés (Nueva Zelanda)</li>
+              <li>PLN - Zloty (Polonia)</li>
+              <li>RON - Leu rumano (Rumania)</li>
+              <li>SEK - Corona sueca (Suecia)</li>
+              <li>SGD - Dólar de Singapur (Singapur)</li>
+              <li>USD - Dólar estadounidense (Estados Unidos)</li>
+              <li>ZAR - Rand sudafricano (Sudáfrica)</li>
+            </ol>
+            
+    </main>   
+
+    <br>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/graficas.js"></script>
+    <footer class="cajafinal"> 
+
+        <h2 class="cajafinal">PROYECTO EURO+</h2>
+        <hr>
+        <img class="cajafinal" width="150px" height="100px" src="./assets/rdes_sociales_logos-removebg.png" alt="redes">
+    
+    </footer>
 </body>
 </html>
