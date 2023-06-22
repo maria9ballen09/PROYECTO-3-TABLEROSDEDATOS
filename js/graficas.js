@@ -31,7 +31,7 @@ function renderChart() {
 }
 function filtroRates(){
     Object.keys(moneyData.rates).forEach(rate => {
-        if (moneyData.rates[rate] > 23){
+        if (moneyData.rates[rate] > 21){
             delete moneyData.rates[rate] 
         } 
     })
